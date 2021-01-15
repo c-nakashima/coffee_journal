@@ -1,0 +1,40 @@
+{
+  "coffee":[
+    {
+      "bean_name":"Ethiopia Yelgechef",
+      "supplyer":"Macchinesti Coffee",
+      "brewing_method":"pourover(V60)",
+      "region":"Ethiopia",
+      "proecss":"Washed",
+      "roast":"light",
+      "keyword":"peach,jasmin,lemon"
+    },
+    {
+      "bean_name":"Brazil",
+      "supplyer":"TAKAMURA COFFEE ROASTER",
+      "brewing_method":"pourover(V60)",
+      "region":"Brazil",
+      "proecss":"Washed",
+      "roast":"medium",
+      "keyword":"chocolate, Nuts, caramel"
+    },
+    {
+      "bean_name":"Ethiopia Yelgechef",
+      "supplyer":"Macchinesti Coffee",
+      "brewing_method":"pourover(V60)",
+      "region":"Brazil",
+      "proecss":"Washed",
+      "roast":"light",
+      "keyword":"peach,jasmin,lemon"
+    },
+    {
+      "bean_name":"Ethiopia Yelgechef",
+      "supplyer":"Macchinesti Coffee",
+      "brewing_method":"pourover(V60)",
+      "region":"Brazil",
+      "proecss":"Washed",
+      "roast":"light",
+      "keyword":"peach,jasmin,lemon"
+    }
+  ]
+}
