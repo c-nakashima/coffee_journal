@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Journal</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="https://d3js.org/d3.v6.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Coffee Journal</h1>
+    <section id="recent_coffee">
+      <h2>Your Recent Coffee</h2>
+      <div class ="cards">
+        <div id="profile" class="card profile">
+          <h3>Profile</h3>
+          <dl>
+            <dt>Coffee Name</dt>
+            <dd>ETHIOPIA Yiergacheff G1</dd>
+            <dt>Roaster Name</dt>
+            <dd>ETAKAMURA COFFEE ROASTERS</dd>
+            <dt>Location Name</dt>
+            <dd>Ethiopia, Yiergacheff</dd>
+            <dt>Processing</dt>
+            <dd>Washed</dd>
+            <dt>Roasting</dt>
+            <dd>Medium</dd>
+            <dt>Acidity</dt>
+            <dd>High</dd>
+            <dt>Body</dt>
+            <dd>Medium</dd>
+            <dt>Flavor</dt>
+            <dd>Lemon, Peach, Darjeeling tea</dd>
+          </dl>
+        </div>
+        <div id="details" class="card details">
+          <h3>More Details</h3>
+          <p class="description-first">Visualize coffee information.</p>
+          <p class="description-second">(Click a profile to visualize)</p>
+          <div id ="taste_graph"></div>
+        </div>
+      </div>
+
+    </section>
+    <section id="coffee_history">
+      <h2>Your Coffee History</h2>
+      <div id="history" class="card history">
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Roaster</th>
+              <th>Coffee Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2021/01/30</td>
+              <td>TAKAMURA COFFEE ROASTERS</td>
+              <td>ETHIOPIA Yiergacheff G1</td>
+            </tr>
+          </tbody>
+        </table>
+        <div id="pagination">
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>&lt;</li>
+            <li>&lt;&lt;</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <div id="taste_cards" class="taste_cards">
+  </div>
+  <!-- <h2>Acidity and Body</h2>
+  <div id ="taste_graph"></div> -->
+  
+  <script src="coffee.json.js"></script>
+  <script src="taste_cards.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

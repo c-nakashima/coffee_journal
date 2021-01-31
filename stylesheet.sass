@@ -1,0 +1,113 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$COLOR_BASE: #f5f2eb
+$COLOR_KEY: #ddd0cb
+$COLOR_BLACK: #595757
+$COLOR_WHITE: #FFFFFF
+$RADIUS_GENERAL: 6px
+
+*
+  font-family: "Montserrat", sans-serif
+  list-style-type: none
+  text-decoration: none
+  box-sizing: border-box
+  margin: none
+  padding: none
+  color: $COLOR_BLACK
+
+p
+  margin: 0px
+
+h1
+  font-size: 28px
+  font-weight: 600
+  margin-bottom: 20px
+
+h2
+  font-size: 16px
+  font-weight: 300
+  margin: 6px 2px
+
+h3
+  margin: 0px
+  padding: 4px
+  font-size: 12px
+  font-weight: 600
+  background-color: $COLOR_KEY
+  color: $COLOR_WHITE
+  border-radius: $RADIUS_GENERAL
+
+body
+  background-color: $COLOR_BASE
+  .container
+    width: 96%
+    margin: 0 auto
+    > #recent_coffee
+      margin-bottom: 40px
+      >.cards
+        display: flex
+        justify-content: space-between
+        >.card
+          width: 48.5%
+          padding: 8px
+          background-color: $COLOR_WHITE
+          border-radius: $RADIUS_GENERAL
+        > #profile
+          > dl
+            margin: 8px 2px
+            font-weight: 300
+            > dt
+              color: $COLOR_KEY
+              font-size: 10px
+              font-weight: 400
+            > dd
+              font-size: 10px
+              margin: 0 0 8px 0
+              font-weight: 400
+        > #details
+          font-size: 10px
+          > .description-first
+            margin: 8px 0px 0px 0px
+          > .description-second
+            margin: 0px 0px 8px 0pxt
+    > #coffee_history
+      > #history
+        padding: 6px
+        background-color: $COLOR_WHITE
+        border-radius: $RADIUS_GENERAL
+        > table
+          width: 96%
+          margin: 0 auto
+          border-collapse: collapse
+          > thead
+              > tr
+                background-color: $COLOR_KEY
+                border-radius: $RADIUS_GENERAL
+                font-size: 12px
+                >th
+                  padding: 8px 12px
+                  color: $COLOR_WHITE
+                  text-align: left
+                  &:first-child
+                    // padding-left: 6px
+                    border-radius: $RADIUS_GENERAL 0px 0px $RADIUS_GENERAL
+                  &:last-child
+                    // padding-right: 6px
+                    border-radius: 0px $RADIUS_GENERAL $RADIUS_GENERAL 0px
+          > tbody
+            font-size: 10px
+            > tr
+              border-bottom: 0.5px solid $COLOR_BASE
+              >td
+                padding: 8px 12px
+                text-align: left
+        #pagination
+          display: flex
+          justify-content: center
+          font-size: 10px
+          > ul
+            display: flex
+            padding: 0px
+            > li
+              padding: 4px
